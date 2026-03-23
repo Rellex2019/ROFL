@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изображение</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .info {
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Мое изображение</h1>
+        <img src="1.jfif" alt="Изображение" onerror="this.src='https://via.placeholder.com/400?text=Image+not+found'">
+        <div class="info">
+            <p>Файл: 1.jfif</p>
+            <p>Размер: <span id="imageSize">загрузка...</span></p>
+        </div>
+    </div>
+
+    <script>
+        // Получение информации о размере изображения
+        const img = document.querySelector('img');
+        img.onload = function() {
+            document.getElementById('imageSize').textContent = 
+                `${this.naturalWidth} x ${this.naturalHeight} пикселей`;
+        };
+        
+        img.onerror = function() {
+            document.getElementById('imageSize').textContent = 'изображение не найдено';
+        };
+    </script>
+</body>
+</html>
