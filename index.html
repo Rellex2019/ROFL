@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VPN Secure - Защита вашей конфиденциальности</title>
+    <title>VPN Сосок - Защита вашей конфиденциальности</title>
     <style>
         * {
             margin: 0;
@@ -233,6 +233,62 @@
             transform: translateY(-2px);
         }
 
+        /* Creator Section */
+        .creator-section {
+            background: white;
+            padding: 60px 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .creator-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .creator-container h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .creator-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .creator-card img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .creator-card h3 {
+            font-size: 28px;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .creator-card p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .funny-text {
+            font-size: 20px;
+            color: #764ba2;
+            font-weight: bold;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
         /* Footer */
         .footer {
             background: #2c3e50;
@@ -271,6 +327,10 @@
             .nav a {
                 margin: 0 15px;
             }
+            
+            .creator-card img {
+                max-width: 150px;
+            }
         }
     </style>
 </head>
@@ -278,10 +338,11 @@
     <!-- Header -->
     <header class="header">
         <div class="header-content">
-            <div class="logo">VPN Secure</div>
+            <div class="logo">VPN Сосок</div>
             <nav class="nav">
                 <a href="#features">Возможности</a>
                 <a href="#pricing">Тарифы</a>
+                <a href="#creator">Создатель</a>
                 <a href="#contact">Контакты</a>
             </nav>
         </div>
@@ -373,10 +434,25 @@
         </div>
     </section>
 
+    <!-- Creator Section -->
+    <section id="creator" class="creator-section">
+        <div class="creator-container">
+            <h2>Создатель этого VPN</h2>
+            <div class="creator-card">
+                <img src="1.jfif" alt="Создатель VPN Сосок" onerror="this.src='https://via.placeholder.com/200?text=Creator'">
+                <h3>Основатель VPN Сосок</h3>
+                <p>Маленький член - маленькие яица</p>
+                <div class="funny-text">
+                    ⚡ Делаем интернет быстрым, даже если что-то маленькое! ⚡
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer id="contact" class="footer">
-        <p>&copy; 2024 VPN Secure. Все права защищены.</p>
-        <p style="margin-top: 10px;">📧 support@vpnsecure.ru | 📞 +7 (999) 123-45-67</p>
+        <p>&copy; 2026 VPN Сосок. Все права Сергея защищены.</p>
+        <p style="margin-top: 10px;">📧 ms.demzyat@gmail.com | 📞 +7 (996) 912-15-69</p>
     </footer>
 
     <script>
@@ -409,20 +485,12 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.pricing-card, .feature-card').forEach(card => {
+        document.querySelectorAll('.pricing-card, .feature-card, .creator-card').forEach(card => {
             card.style.opacity = '0';
             card.style.transform = 'translateY(30px)';
             card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(card);
         });
     </script>
-
-<div class="container">
-    <h1>Создатель этого VPN</h1>
-    <img src="1.jfif" alt="Изображение" onerror="this.src='https://via.placeholder.com/400?text=Image+not+found'">
-    <div class="info">
-        <p>Маленький член - маленькие яица</p>
-</div>
-</div>
 </body>
 </html>
