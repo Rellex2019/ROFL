@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="https://hidevpn.online/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HideVPN - Быстрый и надежный VPN сервис">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <title>HideVPN - Пользовательское соглашение</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            color: #e4e4e7;
+        }
+
+        .app {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .legal-page {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .legal-container {
+            position: relative;
+            background: rgba(15, 25, 45, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 32px;
+            padding: 3rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .legal-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #00d4ff, #7c3aed, #00d4ff);
+            border-radius: 32px 32px 0 0;
+        }
+
+        .legal-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fff 0%, #a78bfa 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 2rem;
+            text-align: center;
+            letter-spacing: -0.02em;
+        }
+
+        .legal-section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .legal-section:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .legal-section h2 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #c4b5fd;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legal-section h2::before {
+            content: '▸';
+            color: #00d4ff;
+            font-size: 1.2rem;
+        }
+
+        .legal-section p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #cbd5e1;
+            margin-bottom: 0.75rem;
+        }
+
+        .legal-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .legal-section ul {
+            list-style: none;
+            padding-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .legal-section ul li {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #cbd5e1;
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.25rem;
+        }
+
+        .legal-section ul li::before {
+            content: '•';
+            color: #00d4ff;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .legal-notice {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, rgba(255, 100, 100, 0.1), rgba(124, 58, 237, 0.1));
+            border-radius: 20px;
+            border-left: 4px solid #ff6b6b;
+            border-right: 4px solid #7c3aed;
+        }
+
+        .legal-notice p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #f0f0f0;
+            text-align: center;
+        }
+
+        .legal-notice strong {
+            color: #ffb347;
+        }
+
+        .legal-support {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(124, 58, 237, 0.1));
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+
+        .legal-support p {
+            font-size: 1rem;
+            color: #e4e4e7;
+        }
+
+        .legal-support a {
+            color: #00d4ff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            border-bottom: 1px dashed #00d4ff;
+        }
+
+        .legal-support a:hover {
+            color: #a78bfa;
+            border-bottom-color: #a78bfa;
+        }
+
+        .legal-navigation {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 2rem;
+            background: linear-gradient(135deg, #00d4ff, #7c3aed);
+            color: white;
+            text-decoration: none;
+            border-radius: 40px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4);
+        }
+
+        .back-button:active {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .app {
+                padding: 1rem;
+            }
+            
+            .legal-container {
+                padding: 1.5rem;
+            }
+            
+            .legal-title {
+                font-size: 1.75rem;
+            }
+            
+            .legal-section {
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+            .legal-section h2 {
+                font-size: 1.2rem;
+            }
+            
+            .legal-section p,
+            .legal-section ul li {
+                font-size: 0.875rem;
+            }
+            
+            .legal-notice p {
+                font-size: 0.8rem;
+            }
+            
+            .back-button {
+                padding: 0.7rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .legal-container {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #00d4ff, #7c3aed);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #7c3aed, #00d4ff);
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div class="app">
+            <div class="legal-page">
+                <div class="legal-container">
+                    <h1 class="legal-title">Пользовательское соглашение</h1>
+                    
+                    <section class="legal-section">
+                        <h2>1. Общие положения</h2>
+                        <p>1.1. Настоящее Пользовательское соглашение (далее — «Соглашение») является юридически обязательным документом, регулирующим порядок использования сервиса HideVPN (далее — «Сервис»).</p>
+                        <p>1.2. Используя Сервис HideVPN, Пользователь подтверждает полное согласие с условиями Соглашения. Если Пользователь не согласен с условиями, он обязан немедленно прекратить использование Сервиса.</p>
+                    </section>
+
+                    <section class="legal-section">
+                        <h2>2. Отказ от ответственности</h2>
+                        <p>2.1. Сервис HideVPN предоставляется «как есть» («AS IS»). Администрация не даёт никаких гарантий, явных или подразумеваемых, в том числе относительно работоспособности, безопасности, соответствия ожиданиям или пригодности для конкретных целей.</p>
+                        <p>2.2. Администрация HideVPN не несёт ответственности за:</p>
+                        <ul>
+                            <li>любые убытки (включая потерю прибыли, данных, репутации), возникшие в результате использования или невозможности использования Сервиса;</li>
+                            <li>действия или бездействие третьих лиц;</li>
+                            <li>содержание, законность, качество, достоверность товаров, услуг или информации, полученных через Сервис;</li>
+                            <li>технические сбои, ошибки, задержки в работе или недоступность Сервиса.</li>
+                        </ul>
+                        <p>2.3. Все риски, связанные с использованием Сервиса HideVPN, полностью возлагаются на Пользователя.</p>
+                    </section>
+
+                    <section class="legal-section">
+                        <h2>3. Ограничения</h2>
+                        <p>3.1. Пользователь обязуется самостоятельно оценивать законность своих действий при использовании Сервиса HideVPN.</p>
+                        <p>3.2. Запрещено использовать Сервис HideVPN для деятельности, противоречащей применимому законодательству.</p>
+                        <p>3.3. Администрация HideVPN вправе в любой момент, без уведомления и объяснения причин:</p>
+                        <ul>
+                            <li>ограничить или заблокировать доступ Пользователя к Сервису;</li>
+                            <li>удалить любую информацию;</li>
+                            <li>приостановить или прекратить работу Сервиса полностью или частично.</li>
+                        </ul>
+                    </section>
+
+                    <section class="legal-section">
+                        <h2>4. Конфиденциальность</h2>
+                        <p>4.1. Администрация HideVPN может собирать минимальный объём технических данных, необходимых для работы Сервиса.</p>
+                        <p>4.2. Администрация HideVPN не гарантирует полную безопасность или анонимность передаваемых данных.</p>
+                    </section>
+
+                    <section class="legal-section">
+                        <h2>5. Изменения в соглашении</h2>
+                        <p>5.1. Администрация HideVPN имеет право в одностороннем порядке изменять условия Соглашения в любое время без предварительного уведомления.</p>
+                        <p>5.2. Продолжение использования Сервиса HideVPN после внесения изменений означает согласие Пользователя с новыми условиями.</p>
+                    </section>
+
+                    <section class="legal-section">
+                        <h2>6. Применимое право</h2>
+                        <p>6.1. Все вопросы и споры, связанные с использованием Сервиса HideVPN, регулируются законодательством юрисдикции, определяемой Администрацией.</p>
+                    </section>
+
+                    <section class="legal-section">
+                        <h2>7. Условия возврата</h2>
+                        <p>7.1. Так как Сервис HideVPN предоставляет цифровые товары и/или услуги нематериального характера, возврат и обмен после их предоставления невозможен.</p>
+                        <p>7.2. Возврат средств может быть осуществлён только в случаях:</p>
+                        <ul>
+                            <li>если услуга не была оказана по техническим причинам со стороны Сервиса;</li>
+                            <li>если доступ к цифровому товару не был предоставлен Пользователю.</li>
+                        </ul>
+                        <p>7.3. Для оформления возврата Пользователь обязан обратиться в службу поддержки Сервиса HideVPN в течение 24 часов с момента оплаты, указав номер заказа и контактные данные.</p>
+                        <p>7.4. Решение о возврате средств принимается Администрацией HideVPN индивидуально в каждом случае.</p>
+                    </section>
+
+                    <div class="legal-notice">
+                        <p><strong>Начиная использование сервиса HideVPN (в том числе, запуская бота и/или вводя команду /start), Пользователь подтверждает, что ознакомлен с настоящим Соглашением и безусловно принимает его условия, даже если фактически не прочитал его.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

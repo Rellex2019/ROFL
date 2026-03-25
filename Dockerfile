@@ -1,4 +1,4 @@
 FROM nginx:alpine
-COPY index.html /usr/share/nginx/html/index.html
-COPY 1.jfif /usr/share/nginx/html/1.jfif
+COPY PrivacyPolicy.html /usr/share/nginx/html/PrivacyPolicy.html
+COPY UserAgreement.html /usr/share/nginx/html/UserAgreement.html
 EXPOSE 80
